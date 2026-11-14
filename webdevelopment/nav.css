@@ -1,0 +1,124 @@
+/* Navigation list layout */
+header nav ul {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+
+    /* Navigation link styles */
+    header nav a {
+        text-decoration: none;
+        color: #1F3A5F;
+        font-weight: bold;
+        padding: 8px;
+    }
+
+    /* Hover effect */
+    header nav a:hover {
+        color: #4A90E2;
+        text-decoration: underline;
+    }
+
+    /* Dropdown menu styles */
+    .reflection-page .dropdown {
+        position: relative;
+    }
+
+    .reflection-page header nav ul.dropdown-menu {
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        min-width: 200px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #E8ECEF;
+        z-index: 1000;
+        text-align: left;
+    }
+
+    /* Dropdown submenu links */
+.reflection-page .dropdown-menu li {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.reflection-page .dropdown-menu a {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 12px;
+    text-align: left;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Pseudo-classes: Show dropdown on hover or keyboard focus */
+.reflection-page .dropdown:hover .dropdown-menu,
+.reflection-page .dropdown:focus-within .dropdown-menu {
+    display: flex;
+}
+
+/* Keep Reflection dropdown links in a vertical column */
+.reflection-page .dropdown-menu a:hover,
+.reflection-page .dropdown-menu a:focus {
+color: #4A90E2;
+text-decoration: underline;
+}
+
+.hamburger {
+    display: none;
+}
+
+/* Mobile navigation */
+@media screen and (max-width: 768px) {
+
+    /* Show the hamburger icon */
+    .hamburger {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: #1F3A5F;
+    }
+
+    /* Hide navigation by default */
+    header nav ul.nav-menu {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        background-color: #E8ECEF;
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Show navigation when activated */
+    header nav ul.nav-menu.active {
+        display: flex;
+    }
+
+    /* Keep Reflection dropdown menus hidden by default */
+    .reflection-page header nav ul.dropdown-menu {
+        display: none;
+        position: static;
+        padding-left: 15px;
+    }
+
+    /* Show Reflection dropdown on hover or keyboard focus */
+    .reflection-page .dropdown:hover .dropdown-menu,
+    .reflection-page .dropdown:focus-within .dropdown-menu {
+        display: flex;
+    }
+}
