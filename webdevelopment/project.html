@@ -1,0 +1,189 @@
+<!Doctype html>
+<html lang="en">
+
+<!--
+Name: Benjamin Ragsdell
+Date: November 14, 2026
+Course: IS_LT-4355
+Description: project page for Summit Aviation.
+-->
+
+<head>
+    <!-- Defines the character encoding for the webpage -->
+    <meta charset="utf-8">
+
+    <!-- makes the webpage responsive on mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Sets the title displayed in the browser tab -->
+    <title>Summit Aviation | Project</title>
+    <!-- Connects this HTML page to the CSS stylesheet -->
+     <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="nav.css">
+
+      <!-- Favicon -->
+      <link rel="image/x-icon" href="favicon.ico">
+
+      <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+      <link rel="manifest" href="favicon_io/site.webmanifest">
+ </head>
+
+   <body>
+
+      <!-- Header section containing the business name and navigation -->
+      <header>
+         <img src="logo.png" alt="Summit Aviation Logo">
+
+
+         <h1>Summit's Core Features</h1> 
+
+         <!-- Navigation for the website -->
+         <nav>
+            <button class="hamburger" aria-label="Toggle navigation">
+               ☰
+            </button>
+
+            <ul class="nav-menu">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="about.html">About</a></li>
+               <li class="business-dropdown">
+                  <details>
+                     <summary>Business Services</summary>
+                     <ul class="dropdown-menu">
+                        <li><a href="project.html#flight-training">Flight Training</a></li>
+                        <li><a href="project.html#aviation-fuel">Aviation Fuel</a></li>
+                        <li><a href="project.html#jet-rentals">Private Jet Rentals</a></li>
+                        <li><a href="project.html#aircraft-maintenance">Aircraft Maintenance</a></li>
+                     </ul>
+                  </details>
+               </li>
+               <li><a href="reflection.html">Reflection</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+         </nav>
+      </header>
+
+      <!-- Main content section -->
+       <main class="project-main">
+
+         <!-- Flight Training Section -->
+          <section id="flight-training">
+            <article>
+               <h2>Flight Training</h2>
+               <p>
+                  We offer quality, affordable flight instruction in a variety of aircraft. 
+                  Whether you are new to flying or are adding a rating to your certificate, 
+                  we have the team of expert flight instructors ready to assist.
+               </p>
+
+               <figure>
+                  <img src="flight-training.png" 
+                  alt="Aircraft used for flight training">
+                  <figcaption>
+                     Our experienced flight instructors are here to help you achieve your aviation goals.</figcaption>
+               </figure>
+            </article>
+          </section>
+
+          <!-- Aviation Fuel Section -->
+            <section id="aviation-fuel">
+               <article>
+                  <h2>Aviation Fuel</h2>
+                  <p>
+                     Summit Aviation provides fuel services for all civilian and military 
+                     aircraft using only the highest quality fuels from Phillips 66. 
+                     The fuel we provide includes 100LL, Jet A, JP-8, and more.
+                  </p>
+
+                  <figure>
+                     <img src="aviation-fuel.png" 
+                     alt="Aircraft receiving aviation fuel">
+                     <figcaption>
+                        We provide high-quality aviation fuel for a variety of aircraft.
+                     </figcaption>
+                  </figure>
+               </article>
+            </section>
+
+         <!-- Private Jet Rentals Section -->
+          <section id="jet-rentals">
+            <article>
+               <h2>Private Jet Rentals</h2>
+
+               <p>
+                  Our business offers jet rentals designed to make traveling more convenient. 
+                  Our aircraft provide a reliable way to reach your destination. Let Summit Aviation take care of the 
+                  details while you focus on where you’re going.
+               </p>
+
+               <figure>
+                  <img src="jet-rentals.png"
+                  alt="Private jet available for rental">
+                  <figcaption>
+                     Our private jet rentals provide a convenient and reliable way to reach your destination.
+                  </figcaption>
+               </figure>
+            </article>
+          </section>
+
+         <!-- Aircraft Maintenance Section -->
+            <section id="aircraft-maintenance">
+               <article>
+                  <h2>Aircraft Maintenance</h2>
+
+                  <p>
+                     Summit Aviation provides aircraft maintenance services for a variety of aircraft. 
+                     Our team of experienced certified mechanics are prepared and ready to assist with your maintenance needs.
+                     We provide inspections, repairs, and more.
+                  </p>
+
+                  <figure>
+                     <img src="aircraft-maintenance.png" 
+                     alt="Aircraft undergoing maintenance">
+                     <figcaption>
+                        Our certified mechanics provide a variety of aircraft maintenance services.
+                     </figcaption>
+                  </figure>
+               </article>
+            </section>
+
+         
+         <!-- Meaningful quote or business motto -->
+          <blockquote>
+            "Reaching New Heights."
+          </blockquote>
+       </main>
+
+      <!-- Footer containing the author's name and current date -->
+
+
+         <!-- Meaningful quote or business motto -->
+          <blockquote>
+            "Reaching New Heights."
+          </blockquote>
+
+      <!-- Footer containing the author's name and current date -->
+       <footer class="site-footer">
+         <p>
+            <img src="Summit-Aviation-Phone.png" alt="Phone icon" width="16" height="16">
+            Phone: 573-476-3937
+         </p>
+         <p>
+            <img src="Summit-Aviation-Email.png" alt="Email icon" width="16" height="16">
+            Email: bmrgm6@umsystem.edu
+         </p>
+       </footer>
+
+       <script>
+         const hamburger = document.querySelector(".hamburger");
+         const navMenu = document.querySelector(".nav-menu");
+
+         hamburger.addEventListener("click", function() {
+            navMenu.classList.toggle("active");
+         });
+       </script>
+
+   </body>
+</html>
